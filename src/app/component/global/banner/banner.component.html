@@ -1,0 +1,30 @@
+<div class="banner-section" id="bannerId">
+  <swiper-container
+    class="banner-swiper"
+    autoplay-delay="2500"
+    autoplay-disable-on-interaction="'false"
+    effect="fade"
+  >
+    @for (img of listImages; track img){
+    <swiper-slide
+      ><img [src]="img" alt="banner" class="banner-image"
+    /></swiper-slide>
+
+    }@empty{
+    <swiper-slide><h1>Data Kosong</h1></swiper-slide>
+    }
+  </swiper-container>
+  <div class="banner-overlay">
+    <div class="banner-layer"></div>
+    <div class="banner-description">
+      <h1>The Best Service For All Your Lifestyle</h1>
+      <h2>
+        Looking for top-notch shoe cleaning and maintenance services? Our expert
+        team ensures your shoes look pristine and last longer. Whether it's a
+        delicate leather pair or your everyday sneakers, we've got you covered.
+        Trust us to keep your footwear in perfect condition with our
+        comprehensive shoe care solutions.
+      </h2>
+    </div>
+  </div>
+</div>

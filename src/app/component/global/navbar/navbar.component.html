@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <img src="FB.png" alt="logo" height="100" />
+    </div>
+    <ul class="nav-menu" [class.active]="isNavMenuActive">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#price">Price</a></li>
+    </ul>
+    <div
+      class="hamburger"
+      (click)="toggleNavMenu()"
+      [class.active]="isNavMenuActive"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
